@@ -10,7 +10,7 @@ def count_word (path):
             count[w] = 1
     return count
 if __name__ == "__main__":
-        count_word = count_word("sample.txt")
-        top = sorted(count_word.items(), key=lambda x: x[1], reverse=True)
+        counts = count_word("sample.txt")
+        top = sorted(counts.items(), key=lambda x: x[1], reverse=True)
         for word, n in top[:3]:
             print(f"{word}:{n}")
